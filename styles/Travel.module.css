@@ -1,0 +1,402 @@
+.main{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    animation: visible .3s ease-in;
+    /* background-color: #45B1BE; */
+    position: relative;
+}
+@keyframes visible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hero{
+    width: 100%;
+    min-height: 350px;
+    /* background: linear-gradient(to bottom right, #AED6D5 10%, #45B1BE 70%); */
+    background-color: #45B1BE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.hero::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to bottom right, #45B1BE 10%, #AED6D5 70%); */
+    background-color: #45B1BE;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    animation: animateHero 5s infinite linear alternate;
+}
+@keyframes animateHero{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.hero h1{
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+    animation: appear .5s ease-in;
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.visa{
+    width: 100%;
+    padding: 50px 20px;
+    min-height: 350px;
+    /* background-color: #eee; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.visa__con{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    gap: 30px;
+}
+.visa__con h1{
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    color: #45B1BE;
+}
+.visa__content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.visa__content__l{
+    flex: 1;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: cardslide .5s ease-in;
+}
+.visa__content__r{
+    flex: 1;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: cardslide .5s ease-in;
+}
+.visa__content__l{
+    --middle-card: -50%;
+}
+.visa__content__r{
+    --middle-card: 50%;
+}
+@keyframes cardslide{
+    0%{
+        transform: translateX(var(--middle-card));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.visa__contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.visa__contact h3{
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    color: #45B1BE;
+}
+.visa__contact a{
+    color: #45B1BE;
+    /* font-size: 1.2rem; */
+    transition: all .3s ease-in;
+}
+.visa__contact a:hover{
+    color: #AED6D5;
+}
+
+.airline{
+    width: 100%;
+    padding: 50px 100px;
+    /* min-height: 100vh; */
+    /* background-color: #eee; */
+    background: linear-gradient(to bottom right, #78e0f4 10%, #4eaee5 30%, #050752 80%);
+    display: flex;
+    position: relative;
+    transition: .5s;
+}
+.airline__l{
+    min-width: 400px;
+    flex: .8;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 0 50px;
+    transition: .5s;
+}
+.airline__l h1{
+    font-size: 2.5rem;
+    margin: 0;
+    /* text-align: center; */
+    color: #fff;
+}
+.airline__l p{
+    font-size: 1.2rem;
+    margin: 0;
+    /* text-align: center; */
+    color: #fff;
+}
+.airline__l a{
+    width: fit-content;
+    padding: 10px 20px;
+    /* background-color: #AED6D5; */
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .3s ease-in;
+}
+.airline__l a:hover{
+    background-color: #fff;
+    color: #AED6D5;
+}
+.airline__r{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: .5s;
+}
+.airline__r img{
+    width: 100%;
+    min-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    transition: .5s;
+}
+.airline__r img:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(90deg);
+}
+.airline:hover .airline__l{
+    transform: translateX(calc(100% + 50px));
+}
+.airline:hover .airline__r{
+    transform: translateX(calc(-100% + 50px));
+}
+
+.airline:hover .airline__r img:nth-of-type(2){
+    transform: rotateX(0deg);
+}
+.airline:hover .airline__r img:nth-of-type(1){
+    transform: rotateX(-90deg);
+}
+
+
+.hotel{
+    width: 100%;
+    /* min-height: 50vh; */
+    padding: 50px 0 0;
+    /* background-color: #eee; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    margin-top: 50px;
+    transition: .5s;
+}
+.hotel h1{
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    color: #45B1BE;
+}
+
+.embla{
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    position: relative;
+    /* background-color: red; */
+}
+.embla__container {
+    height: 100%;
+    display: flex;
+}
+.embla__slide {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+    position: relative;
+}
+.embla__slide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.hotel__content{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 50px;
+    transition: .5s;
+    background: linear-gradient(to bottom, #78e0f4 10%, #4eaee5 30%, #050752 80%);
+}
+.hotel__content h2{
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+.hotel__content p{
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+.hotel__content a{
+    width: fit-content;
+    padding: 10px 20px;
+    /* background-color: #AED6D5; */
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: all .3s ease-in;
+}
+.hotel__content a:hover{
+    background-color: #fff;
+    color: #AED6D5;
+}
+
+
+/*////////////// @media queries ////////////////*/
+
+@media only screen and (max-width: 600px) {
+    .visa__content__l{
+        min-width: 250px;
+    }
+    .visa__content__r{
+        min-width: 250px;
+    }
+    .airline{
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 50px;
+        /* padding: 50px 20px; */
+    }
+    .airline__l{
+        padding: 0;
+        min-width: 100%;
+    }
+    .airline__l h1{
+        font-size: 2rem;
+    }
+    .airline__l p{
+        font-size: 1rem;
+    }
+    .airline__r img{
+        min-width: 100%;
+        height: 300px;
+    }
+    .airline:hover .airline__l{
+        transform: translateX(0);
+    }
+    .airline:hover .airline__r{
+        transform: translateX(0);
+    }
+    .hotel__content{
+        padding: 50px 20px;
+    }
+    .hotel__content h2{
+        font-size: 1.5rem;
+    }
+    .hotel__content p{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .airline{
+        flex-direction: column;
+        gap: 50px;
+        /* padding: 50px 20px; */
+    }
+    .airline__l{
+        padding: 0;
+    }
+    .airline:hover .airline__l{
+        transform: translateX(0);
+    }
+    .airline:hover .airline__r{
+        transform: translateX(0);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .airline{
+        flex-direction: column;
+        gap: 50px;
+        /* padding: 50px 20px; */
+    }
+    .airline__l{
+        padding: 0;
+    }
+    .airline:hover .airline__l{
+        transform: translateX(0);
+    }
+    .airline:hover .airline__r{
+        transform: translateX(0);
+    }
+}

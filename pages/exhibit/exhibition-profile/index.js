@@ -1,0 +1,19 @@
+import Head from 'next/head'
+import style from '../../../styles/Attend.module.css'
+import Hero from '../Hero'
+import ExhibitionProfile from './ExhibitionProfile'
+import ViewProfileModal from './ViewProfileModal'
+
+export default function index() {
+  return (
+    <div className={style.main}>
+        <Head>
+            <title>AMEC || Exhibition Profile</title>
+            <meta name="description" content="AMEC Exhibition Profile" />
+        </Head>
+        <Hero title={'Exhibition Profile'} />
+        <ExhibitionProfile />
+        <ViewProfileModal />
+    </div>
+  )
+}

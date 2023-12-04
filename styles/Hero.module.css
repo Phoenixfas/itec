@@ -1,0 +1,125 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: #030d41;
+    display: flex;
+    position: relative;
+    padding-top: 90px;
+}
+.hero__l{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 50px;
+    color: #fff;
+    justify-content: center;
+    position: relative;
+    z-index: 9999;
+}
+.hero__l h1{
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero__l p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #ffffff88;
+}
+.hero__buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.hero__buttons a:nth-of-type(1){
+    padding: 10px 40px;
+    transition: .3s;
+    background-color: #4eaee5;
+}
+.hero__buttons a:nth-of-type(2){
+    padding: 10px 40px;
+    background-color: #1b2242;
+    transition: .3s;
+}
+.hero__buttons a:hover{
+    box-shadow: 0 0 5px 2px #ffffff88;
+}
+.hero__r{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    /* overflow: hidden; */
+}
+.hero__r img{
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: contain;
+    /* filter: grayscale(100%); */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+.hero__gradient{
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(#4eaee555, transparent);
+    filter: blur(100px);
+    transform: translate(30%, 50%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    border-radius: 50%;
+}
+
+/*///////////////////////////////////////////////// @media queries ///////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 365px) {
+    .hero__l{
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__l h1{
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .hero__r{
+        display: none;
+    }
+    .hero__buttons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 365px) and (max-width: 600px) {
+    .hero__l{
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__r{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+
+}
