@@ -6,8 +6,8 @@ export default function register() {
   return (
     <div className={style.main}>
       <Head>
-        <title>AMEC || Register</title>
-        <meta name="description" content="AMEC Register" />
+        <title>ITEC || Register</title>
+        <meta name="description" content="ITEC Register" />
       </Head>
       <BookAStand />
     </div>

@@ -7,8 +7,8 @@ export default function exhibit() {
   return (
     <div className={style.main}>
       <Head>
-        <title>AMEC || Blogs</title>
-        <meta name="description" content="AMEC Blogs" />
+        <title>ITEC || Blogs</title>
+        <meta name="description" content="ITEC Blogs" />
       </Head>
       <Hero />
       <BlogPaginator />

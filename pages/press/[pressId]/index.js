@@ -6,7 +6,7 @@ export default function blogId({blog}) {
     return (
       <>
         <Head>
-          <title>{`AMEC || ${blog?.snippet}`}</title>
+          <title>{`ITEC || ${blog?.snippet}`}</title>
           <meta name="description" content={`${blog?.snippet}`} />
         </Head>
         <div className={style.service}>

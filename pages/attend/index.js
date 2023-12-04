@@ -9,8 +9,8 @@ export default function index() {
   return (
     <div className={style.main}>
         <Head>
-            <title>AMEC | Attend</title>
-            <meta name="description" content="AMEC Attend" />
+            <title>ITEC | Attend</title>
+            <meta name="description" content="ITEC Attend" />
         </Head>
         <Hero title={'Exhibit'} />
         <ExhibitorsList />

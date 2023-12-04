@@ -3,7 +3,7 @@ import style from '../../../styles/Exhibit.module.css'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
-import { loadStripe } from '@stripe/stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
 
 
 export default function BookAStand() {
@@ -32,33 +32,33 @@ export default function BookAStand() {
         quantity: 1, 
     });
 
-    const makePayment = async () => { 
-        const stripe = await loadStripe("pk_test_51O2bPWBTpXmXttHzv6OFkqHqvLCMG5LDc95CQWGAIhCohW48XZNQ2yOrWOO6MYHjUqrz4pX4JkPBygJtjdwoc5GC00JzLwbcNX"); 
-        const body = { product }; 
-        const headers = { 
-          "Content-Type": "application/json", 
-        }; 
+    // const makePayment = async () => { 
+    //     const stripe = await loadStripe("pk_test_51O2bPWBTpXmXttHzv6OFkqHqvLCMG5LDc95CQWGAIhCohW48XZNQ2yOrWOO6MYHjUqrz4pX4JkPBygJtjdwoc5GC00JzLwbcNX"); 
+    //     const body = { product }; 
+    //     const headers = { 
+    //       "Content-Type": "application/json", 
+    //     }; 
      
-        const response = await fetch( 
-          "https://dashboard.afriopia.com/api/payment/init", 
-          { 
-            method: "POST", 
-            headers: headers, 
-            body: JSON.stringify(body), 
-          } 
-        ); 
+    //     const response = await fetch( 
+    //       "https://dashboard.afriopia.com/api/payment/init", 
+    //       { 
+    //         method: "POST", 
+    //         headers: headers, 
+    //         body: JSON.stringify(body), 
+    //       } 
+    //     ); 
      
-        const session = await response.json(); 
+    //     const session = await response.json(); 
      
-        const result = stripe.redirectToCheckout({ 
-          sessionId: session.id, 
-        }); 
+    //     const result = stripe.redirectToCheckout({ 
+    //       sessionId: session.id, 
+    //     }); 
      
-        if (result.error) { 
-          console.log(result.error);
-          setError(result.error.message);
-        } 
-    }; 
+    //     if (result.error) { 
+    //       console.log(result.error);
+    //       setError(result.error.message);
+    //     } 
+    // }; 
 
 
     const onSubmit = async(e) => {

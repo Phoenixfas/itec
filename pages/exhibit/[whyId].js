@@ -7,7 +7,7 @@ export default function whyId({why}) {
     return (
       <>
         <Head>
-          <title>{`AMEC || ${why?.title}`}</title>
+          <title>{`ITEC || ${why?.title}`}</title>
           <meta name="description" content={`${why?.description}`} />
         </Head>
         <div className={style.service}>

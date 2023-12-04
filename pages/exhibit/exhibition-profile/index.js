@@ -8,8 +8,8 @@ export default function index() {
   return (
     <div className={style.main}>
         <Head>
-            <title>AMEC || Exhibition Profile</title>
-            <meta name="description" content="AMEC Exhibition Profile" />
+            <title>ITEC || Exhibition Profile</title>
+            <meta name="description" content="ITEC Exhibition Profile" />
         </Head>
         <Hero title={'Exhibition Profile'} />
         <ExhibitionProfile />

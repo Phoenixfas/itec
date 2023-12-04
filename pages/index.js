@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AMEC - African Medical Exhibition & Conference</title>
+        <title>ITEC - Innovative Tech Expo & Conference</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="In the heart of Kigali, Rwanda, the African Medical Exhibition & Conference is your gateway to the future of healthcare in Africa. Join us for a transformative event that unites innovation, expertise, best minds and collaboration for a healthier continent." />
+        <meta name="description" content="ITEC - Innovative Tech Expo & Conference" />
       </Head>
       <div className={styles.main}>
         <Hero />

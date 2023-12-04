@@ -9,8 +9,8 @@ export default function index() {
   return (
     <div className={style.main}>
         <Head>
-            <title>AMEC || Travel</title>
-            <meta name="description" content="AMEC Travel" />
+            <title>ITEC || Travel</title>
+            <meta name="description" content="ITEC Travel" />
         </Head>
         <Hero />
         <Visa />

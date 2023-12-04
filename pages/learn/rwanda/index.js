@@ -7,8 +7,8 @@ export default function index() {
   return (
     <div className={style.main}>
         <Head>
-            <title>AMEC || About Rwanda</title>
-            <meta name="description" content="AMEC About Rwanda" />
+            <title>ITEC || About Rwanda</title>
+            <meta name="description" content="ITEC About Rwanda" />
         </Head>
         <Hero title={'About Rwanda'} />
         <AbtRwanda />

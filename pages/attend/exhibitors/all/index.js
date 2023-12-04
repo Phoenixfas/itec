@@ -8,8 +8,8 @@ export default function index() {
   return (
     <div style={{backgroundColor: "#eee"}} className={style.main}>
         <Head>
-            <title>AMEC || Exhibitors List</title>
-            <meta name="description" content="AMEC Exhibitors List" />
+            <title>ITEC || Exhibitors List</title>
+            <meta name="description" content="ITEC Exhibitors List" />
         </Head>
         <ViewExhibitorModal />
         <Hero title="All Exhibitors" />

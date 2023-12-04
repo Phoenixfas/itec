@@ -8,7 +8,7 @@ export default function index({activity, day}) {
   return (
     <div className={style.main}>
         <Head>
-            <title>{`AMEC || ${activity.name}`}</title>
+            <title>{`ITEC || ${activity.name}`}</title>
             <meta name="description" content={activity.description} />
         </Head>
         <Hero title={activity.name} image={activity.image} />

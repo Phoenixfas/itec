@@ -200,8 +200,8 @@ export default function Navbar() {
                   <i className="far fa-chart-bar italic"></i>Learn
                 </Link>
                 <div className="dropdown">
-                  <Link href={"/learn/organizer"} className="dropdown__item">About Organizer</Link>
-                  <Link href={"/learn/rwanda"} className="dropdown__item">About Rwanda</Link>
+                  {/* <Link href={"/learn/organizer"} className="dropdown__item">About Organizer</Link> */}
+                  {/* <Link href={"/learn/rwanda"} className="dropdown__item">About Rwanda</Link> */}
                   <Link href={"/learn/contact"} className="dropdown__item">Contact us</Link>
                 </div>
               </li>
@@ -258,8 +258,8 @@ export default function Navbar() {
               <div className="navItems__item">
                 <p>Learn</p>
                 <div className="dropdown">
-                  <Link href={"/learn/organizer"} className="dropdown__item" onClick={() => toggleMobile()}>About Organizer</Link>
-                  <Link href={"/learn/rwanda"} className="dropdown__item" onClick={() => toggleMobile()}>About Rwanda</Link>
+                  {/* <Link href={"/learn/organizer"} className="dropdown__item" onClick={() => toggleMobile()}>About Organizer</Link> */}
+                  {/* <Link href={"/learn/rwanda"} className="dropdown__item" onClick={() => toggleMobile()}>About Rwanda</Link> */}
                   <Link href={"/learn/contact"} className="dropdown__item" onClick={() => toggleMobile()}>Contact us</Link>
                 </div>
               </div>
